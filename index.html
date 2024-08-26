@@ -10,18 +10,46 @@
 
     <body>
 
+    <script src = "Coffee.js">
+    </script>
+
     <h1>Unbounded Lands</h1>
     <p>
         A browser fantasy CRPG <br/>
         Set in the perilous expanse of the Undounded Lands <br/>
-        
     </p>
 
+    <div class="containerB">
     <ul>
         <li>Turn-based</li>
         <li>Party-based</li>
         <li>Tile-based</li>
     </ul>
+    </div>
+
+    <br/><br/>
+    <div class="container">
+    <button type="button"
+    onclick="document.getElementById('bmist').style.visibility='visible'">
+    REVEAL!! </button>
+
+    <button type="button"
+    onclick="document.getElementById('bmist').style.visibility='hidden'">
+    OBSCURE!! </button>
+    <br/>
+    <button type="button"
+    onclick="reduceSize(document.getElementById('bmist'))">
+    SHRINK!! </button>
+
+    <button type="button"
+    onclick="increaseSize(document.getElementById('bmist'))"> 
+    ENLARGE!! </button>
+    </div>
+    <br/><br/>
+
+    <img id="bmist" src="BlueMist.png" style="width:1000px">
+
+
 
     </body>
 

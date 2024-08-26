@@ -12,3 +12,57 @@ body {
     text-align: center;
     font-family: verdana;
   }
+
+  .container {
+    text-align: center;
+    border: 7px solid yellowgreen;
+    width: 300px;
+    height: 100px;
+    /*padding-top: 100px;*/
+  }
+
+  #btn{
+    font-size: 25px;
+  }
+
+  .containerB {
+    text-align: center;
+    border: 7px solid yellowgreen;
+    width: 300px;
+    height: 100px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style-position: inside;
+    color: goldenrod;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    font-family: verdana;
+  }
+
+  div {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  button {
+    border: darkgreen;
+    background-color: lightgreen;
+    color: black;
+  }
+
+  p {
+    color: goldenrod;
+    text-align: center;
+    font-family: verdana;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
