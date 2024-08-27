@@ -17,3 +17,22 @@ function increaseSize(element) {
     element.style = command;
 }
 
+function resize(element, event){
+    if(event.deltaY < 0) reduceSize(element);
+    else if(event.deltaY > 0) increaseSize(element);
+    else return;
+}
+
+function disableScroll() {
+    let xOff = window.scrollX || 
+    document.documentElement.scrollLeft;
+    let yOff = window.scrollY || 
+    document.documentElement.scrollTop;
+    window.onscroll = function () {
+        window.scrollTo(0, 0);
+    };
+}
+
+function enableScroll() {
+    window.onscroll = function () { };
+}
