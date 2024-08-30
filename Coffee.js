@@ -18,8 +18,8 @@ function increaseSize(element) {
 }
 
 function resize(element, event){
-    if(event.deltaY < 0) reduceSize(element);
-    else if(event.deltaY > 0) increaseSize(element);
+    if(event.deltaY > 0) reduceSize(element);
+    else if(event.deltaY < 0) increaseSize(element);
     else return;
 }
 
@@ -29,7 +29,7 @@ function disableScroll() {
     let yOff = window.scrollY || 
     document.documentElement.scrollTop;
     window.onscroll = function () {
-        window.scrollTo(0, 0);
+        window.scrollTo(xOff, yOff);
     };
 }
 
