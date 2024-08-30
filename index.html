@@ -5,7 +5,7 @@
 
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Page Title</title>
+    <title>Unbounded Lands Landing</title>
     </head>
 
     <body>
@@ -27,6 +27,9 @@
     </ul>
     </div>
 
+    <p><a href="game.html">THE GAME</a></p>
+
+
     <br/><br/>
     <div class="container">
     <button type="button"
@@ -42,23 +45,29 @@
     SHRINK!! </button>
 
     <button type="button"
-    onclick="increaseSize(document.getElementById('bmist'))"> 
+    onclick="increaseSize(document.getElementById('bmist'))">
     ENLARGE!! </button>
     </div>
     <br/><br/>
 
     <div class="containerC">
         <img 
-            onmousewheel="resize(document.getElementById('bmist'), event)" 
+            onmousewheel="resize(document.getElementById('bmist'), event)"
             onmouseover="disableScroll()"
+            onmouseenter="disableScroll()"
             onmouseout="enableScroll()"
+            onmouseleave="enableScroll()"
             id="bmist" src="BlueMist.png" style="width:1000px">
         <div class="containerD">
             <p>A resizable screenshot of a very different game </p>
         </div>
     </div>
     
+    <pre>
+        <code>
 
+        </code>
+    </pre>
     
 
     </body>
