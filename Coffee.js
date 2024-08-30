@@ -17,8 +17,8 @@ function increaseSize(element) {
 }
 
 function resize(element, event){
-    if(event.deltaY < 0) reduceSize(element);
-    else if(event.deltaY > 0) increaseSize(element);
+    if(event.deltaY > 0) reduceSize(element);
+    else if(event.deltaY < 0) increaseSize(element);
     else return;
 }
 

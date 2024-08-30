@@ -47,29 +47,29 @@
     <button type="button"
     onclick="increaseSize(document.getElementById('bmist'))">
     ENLARGE!! </button>
+
+    <p>You can also resize the image by hovering the mouse over it and using the scroll wheel</p>
     </div>
     <br/><br/>
 
     <div class="containerC">
         <img 
-            onmousewheel="resize(document.getElementById('bmist'), event)"
+            class="backg" id="bmist" src="BlueMist.png" style="width:1000px">
+        </imgid>
+        <img 
+            class="supa"
+            onmousewheel="resize(document.getElementById('supa'), event)"
             onmouseover="disableScroll()"
             onmouseenter="disableScroll()"
             onmouseout="enableScroll()"
             onmouseleave="enableScroll()"
-            id="bmist" src="BlueMist.png" style="width:1000px">
+            id="supa" src="SUPAPLEX.png" style="width:1000px">
+        </imgid>
         <div class="containerD">
             <p>A resizable screenshot of a very different game </p>
         </div>
     </div>
-    
-    <pre>
-        <code>
-
-        </code>
-    </pre>
-    
-
+  
     </body>
 
 </html>
