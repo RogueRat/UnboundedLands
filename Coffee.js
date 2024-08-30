@@ -5,7 +5,6 @@ function reduceSize(element) {
         let newSize = oldSize - 50;
         if(newSize < 50) return;
         let command = "width:" + newSize + "px";
-        /*window.alert("Old: " + oldSize + " and new: " + newSize + " and command: " + command);*/
         element.style = command;
 }
 
