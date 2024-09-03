@@ -16,13 +16,29 @@
 </h>
 
 <body>
-    <div class="gameWorld"></div>
+    <script src = "Coffee.js">
+    </script>
+
+    <div class="gameWorld">
+        <div class="player" id="pc"></div>
+    </div>
 
     <div class="moveControls">
-        <button class="dirButtonUp">UP</button>
-        <button class="dirButtonDown">DOWN</button>
-        <button class="dirButtonLeft">LEFT</button>
-        <button class="dirButtonRight">RIGHT</button>
+        <button class="dirButtonUp"
+            onclick="movePC(document.getElementById('pc'), 1)"
+        >UP</button>
+
+        <button class="dirButtonDown"
+            onclick="movePC(document.getElementById('pc'), 2)"
+        >DOWN</button>
+
+        <button class="dirButtonLeft"
+            onclick="movePC(document.getElementById('pc'), 3)"
+        >LEFT</button>
+
+        <button class="dirButtonRight"
+            onclick="movePC(document.getElementById('pc'), 4)"
+        >RIGHT</button>
     </div>
 
     <div class="gameTitle">

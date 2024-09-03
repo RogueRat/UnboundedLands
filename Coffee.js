@@ -1,4 +1,5 @@
 
+let pcX = 0, pcY = 0;
 
 function reduceSize(element) {
         let oldSize = element.offsetWidth;
@@ -20,6 +21,26 @@ function resize(element, event){
     if(event.deltaY > 0) reduceSize(element);
     else if(event.deltaY < 0) increaseSize(element);
     else return;
+}
+
+function movePC(element, dir) {
+    switch(dir){
+        case 1: { // UP
+            pcY -= 100;
+        } break;
+        case 2: { // DOWN
+            pcY += 100;
+        } break;
+        case 3: { // LEFT
+            pcX -= 100;
+        } break;
+        case 4: { // RIGHT
+            pcX += 100;
+        } break;
+    }
+    //let command = "left:" + pcX + "px " + "top:" + pcY + "px";
+    element.style.left = pcX + "px ";
+    element.style.top = pcY + "px ";
 }
 
 function disableScroll() {
